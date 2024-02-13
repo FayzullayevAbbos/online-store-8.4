@@ -6,7 +6,7 @@ const singlePost = async (id: number) => {
 
 async function page({ params }: { params: { id: number } }) {
   const post = await singlePost(params.id);
-  // console.log(post);
+ 
 
   return (
     <div className="flex items-center justify-center max-w-7xl m-auto wrapper mt-4">
